@@ -1,0 +1,36 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{ title() }}</h1>
+    <p>Learn Angular component data passing with practical examples</p>
+  </header>
+
+  <nav class="app-nav">
+    <a routerLink="/input-example" 
+       routerLinkActive="active" 
+       class="nav-link">
+      <span class="nav-icon">📥</span>
+      <span class="nav-text">
+        <strong>@Input() Example</strong>
+        <small>Parent → Child</small>
+      </span>
+    </a>
+    
+    <a routerLink="/output-example" 
+       routerLinkActive="active" 
+       class="nav-link">
+      <span class="nav-icon">📤</span>
+      <span class="nav-text">
+        <strong>@Output() Example</strong>
+        <small>Child → Parent</small>
+      </span>
+    </a>
+  </nav>
+
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="app-footer">
+    <p>This example demonstrates Angular component communication patterns using @Input() and @Output() decorators.</p>
+  </footer>
+</div>

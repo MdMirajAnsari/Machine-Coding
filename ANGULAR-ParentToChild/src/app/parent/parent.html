@@ -1,0 +1,14 @@
+<div class="parent-container">
+  <h2>Parent Component</h2>
+  <div class="child-container">
+    <app-child [sendData]="data"></app-child>
+  </div>
+  
+  <div class="input-section">
+    <input 
+      type="text" 
+      (input)="loadData($event)" 
+      placeholder="Type something..." />
+    <button (click)="sendData()">Send Data to Child</button>
+  </div>
+</div>
