@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "cli": {
+    "packageManager": "npm"
+  },
   "newProjectRoot": "projects",
   "projects": {
-    "angular-input-output-example": {
+    "angular-child-to-parent": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -33,13 +36,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "5MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "6kB",
+                  "maximumError": "10kB"
                 }
               ],
               "outputHashing": "all"
@@ -56,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-input-output-example:build:production"
+              "buildTarget": "angular-child-to-parent:build:production"
             },
             "development": {
-              "buildTarget": "angular-input-output-example:build:development"
+              "buildTarget": "angular-child-to-parent:build:development"
             }
           },
           "defaultConfiguration": "development"

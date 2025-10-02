@@ -1,0 +1,7 @@
+<div style="padding: 1rem; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 1rem;">
+  <label>
+    Message from child:
+    <input #msg type="text" placeholder="Type something..." />
+  </label>
+  <button (click)="send(msg.value)" style="margin-left: 0.5rem;">Send to parent</button>
+</div>
